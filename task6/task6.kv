@@ -1,0 +1,38 @@
+
+
+<Container>:
+    text_label: text_label
+    start_button: start_button
+    stop_button: stop_button
+
+    Label:
+        id: text_label
+        pos_hint: {'center_x': 0.5, 'y': 0.2}
+        font_size: 40
+        text: 'COVID-19'
+        color: [1, 71, 0, 1]
+
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: 10
+
+        size_hint: 0.4, 0.2
+        pos_hint: {'center_x': 0.5}
+
+        Button:
+            id: start_button
+            text: 'Start'
+            font_size: 20
+            background_color: [1, 71, 0, 1]
+
+            on_release: root.start_moving()
+
+        Button:
+            id: stop_button
+            text: 'Stop'
+            font_size: 20
+            background_color: [71, 0, 0, 1]
+            disabled: True
+
+            on_release: root.stop_moving()
