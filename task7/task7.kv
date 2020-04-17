@@ -1,0 +1,65 @@
+
+
+<Container>:
+    left_spinner: left_spinner
+    right_spinner: right_spinner
+
+    text_input: text_input
+    add_button: add_button
+    to_right_button: to_right_button
+    delete_button: delete_button
+    clear_button: clear_button
+
+    BoxLayout:
+        padding: 20
+        spacing: 250
+        size_hint: 1, 0.4
+        pos_hint: {'center_y': 0.8}
+
+        Spinner:
+            id: left_spinner
+            size_hint: 0.2, 0.4
+            font_size: 20
+
+        Spinner:
+            id: right_spinner
+            size_hint: 0.2, 0.4
+            font_size: 20
+
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: 10
+
+        size_hint: 0.3, 0.5
+        pos_hint: {'center_x': 0.5}
+
+        TextInput:
+            id: text_input
+            size_hint: 1, 1.5
+            font_size: 20
+            multiline: False
+
+        Button:
+            id: add_button
+            text: 'Add'
+            font_size: 16
+            on_release: root.add_item()
+
+        Button:
+            id: to_right_button
+            text: 'ToRight'
+            font_size: 16
+            on_release: root.move_to_right()
+
+        Button:
+            id: delete_button
+            text: 'Delete'
+            font_size: 16
+            on_release: root.delete_selected()
+
+        Button:
+            id: clear_button
+            text: 'Clear'
+            font_size: 16
+            on_release: root.clear_all()
