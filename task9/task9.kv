@@ -1,0 +1,45 @@
+
+
+<Container>:
+    spinner: spinner
+    image_1: image_1
+    image_2: image_2
+    image_3: image_3
+    image_4: image_4
+
+    Spinner:
+        id: spinner
+        pos_hint: {'center_x': 0.1, 'center_y': 0.95}
+        size_hint: 0.2, 0.1
+        font_size: 20
+        text: 'Image1'
+        values: 'Image1', 'Image2', 'Image3', 'Image4'
+
+
+    Image:
+        id: image_1
+        source: 'index1.jpeg'
+        size: 150, 150
+        size_hint: None, None
+        pos: 30, 100
+
+    Image:
+        id: image_2
+        source: 'index2.jpeg'
+        size: 150, 150
+        size_hint: None, None
+        pos: 100, 100
+
+    Image:
+        id: image_3
+        source: 'index3.jpeg'
+        size: 150, 150
+        size_hint: None, None
+        pos: 300, 100
+
+    Image:
+        id: image_4
+        source: 'index4.jpeg'
+        size: 150, 150
+        size_hint: None, None
+        pos: 300, 400
