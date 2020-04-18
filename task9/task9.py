@@ -6,7 +6,7 @@ from kivy.animation import Animation
 
 
 Window.size = (700, 500)
-Window.title = 'Task8'
+Window.title = 'Task9'
 
 
 class Container(FloatLayout):
