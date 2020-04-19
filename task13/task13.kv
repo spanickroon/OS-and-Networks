@@ -1,0 +1,26 @@
+
+
+<Container>:
+    spinner: spinner
+    button: button
+    spinner_info: spinner_info
+    padding: 10
+
+    Button:
+        id: button
+        text: 'Update'
+        size_hint: 0.2, 0.1
+        pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+        on_release: root.update_info()
+
+    Spinner:
+        id: spinner
+        pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+        size_hint: 0.2, 0.1
+        font_size: 20
+
+    Spinner:
+        id: spinner_info
+        pos_hint: {'center_x': 0.8, 'center_y': 0.8}
+        size_hint: 0.2, 0.1
+        font_size: 20
